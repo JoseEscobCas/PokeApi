@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <title>PokePoke</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/style.css"/>
+        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/640px-Pok%C3%A9_Ball_icon.svg.png">
+
+        <!--Jquery & boostrap-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    </head>
+    <body>
+        <header class="header bg-info">
+            <h1 class="title text-center p-2">Pokedex <span class="iconify" data-icon="tabler:pokeball"></span></h1>
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <form class="d-flex">
+                        <input  class="form-control me- input"  type="search" placeholder="Search Id or Name" aria-label="Search">
+                        <button class="btn btn-outline-success btn-search" type="submit"><span class="iconify" data-icon="mdi:pokeball"></span></button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!--carta pokemon se hace con js-->
+            <div class="container mt-3 mb-5 poke-container">
+
+            </div>
+
+            <!--carta de busqueda-->
+            <div class="box" id="box">
+                <div class="close text-end">
+                    <h3 id="closeX">Pokemon Search <span  class="iconify closeX" data-icon="carbon:close-filled"></span></h3> 
+                </div>
+                <div class="search">
+
+                </div>
+            </div>
+
+
+            <!--Botones siguientes-->
+            <nav aria-label="Page navigation example" id="pagination">
+                <ul class="pagination">
+                    <li id="privius" class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                    <li id="next" class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                </ul>
+            </nav>
+
+        </main>
+
+        <footer>
+            PokeApi 2022- 2023 pokedex interactive &copy;
+            <div class="redes mt-3 mb">
+                <p><span class="iconify" data-icon="akar-icons:facebook-fill"></span></p>
+                <p><span class="iconify" data-icon="ant-design:instagram-filled"></span></p>
+                <p><span class="iconify" data-icon="ant-design:youtube-filled"></span></p>
+            </div>
+        </footer>
+
+        <!--spinner -->
+        <div class="spinners spinnerChar">
+            <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- alert-->
+        <div id="alert" class="alert alert-info" role="alert">
+            <div class="infoX text-start">Información de Pokedex <span  class="iconify closeX" data-icon="carbon:close-filled"></span></div>
+            <div id="info" class="info">
+                
+            </div>
+        </div>
+
+
+        <!--script-->
+        <script src="./JS/main.js"></script>
+        <script src="./JS/search.js"></script>
+    </body>
+</html>
