@@ -13,7 +13,7 @@
 ## Structure:
 
 - PokeApi : Javascript Vanilla.
-- Css Style. 
+- Css Style and Boostrap.
 
 ## Run:
 
