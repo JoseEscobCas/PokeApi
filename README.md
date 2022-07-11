@@ -20,7 +20,9 @@
 - Download the code.
 - Unzip the code on your computer.
 - Open the file in your computer file browser.
-- Find the file with the name "".
+- Find the file with the name "Public_html".
+- Then open the file called "index.html" doble click.
+- Then the code must running in your localhost and visualised on your brwoser.
 
 ## Tech: 
 0.0.1
